@@ -1,0 +1,11 @@
+.dialog.edit-dialog {
+  @apply w-200 h-150;
+}
+
+.data-section {
+  @apply grid items-start md:grid-cols-2;
+}
+
+.relation-btn {
+  @apply bg-white dark:bg-darker border-2 border-primary color-primary;
+}

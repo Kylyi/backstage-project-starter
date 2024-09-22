@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    image: kylyi/app-ai:latest
+
+    environment:
+      - 'VITE_APP_NAME=${VITE_APP_NAME}'
+      - 'NUXT_PUBLIC_ENV=${NUXT_PUBLIC_ENV}'
+      - 'COOKIE_DOMAIN=${COOKIE_DOMAIN}'
+      - 'DB_URL=${DB_URL}'
+      - 'JWT_SECRET=${JWT_SECRET}'
+      - 'VITE_SEED_HASH=${VITE_SEED_HASH}'
+      - 'FILES_PATH=${FILES_PATH}'
+      - 'FILES_HOST=${FILES_HOST}'
+
+    ports:
+      - 3025:3000
+
+    volumes:
+      - ./node_modules:/app/node_modules
+      - ./files:/usr/src/app/files
+      - ./errors:/usr/src/app/errors

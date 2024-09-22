@@ -1,0 +1,152 @@
+{
+  "files.eol": "\n",
+  "i18n-ally.localesPaths": [
+    "i18n",
+    "utils/i18n"
+  ],
+  "files.exclude": {
+    "**/.npmrc": true,
+    "**/node_modules": true,
+    "**/tsconfig.json": true,
+    "**/tsconfig.build.json": true,
+    "package*.json": true,
+    "pnpm-lock.yaml": true,
+    "**/.gitignore": true,
+    "**/.eslintrc*": true,
+    "**/dist": true,
+    "**/.editorconfig": true,
+    "**/.prettierrc": true,
+    "**/schema.gql": true,
+    "**/nest-cli.json": true,
+    "**/app.e2e-spec.ts": true,
+    // "*[d|D]ocker*": true,
+    ".nuxt": true,
+    ".output": true,
+    ".gitmodules": true,
+    "yarn.lock": true
+  },
+  "search.exclude": {
+    "**/.npmrc": false,
+    "**/tsconfig.json": false,
+    "**/tsconfig.build.json": false,
+    "package*.json": false,
+    "**/.gitignore": false,
+    "**/.eslintrc*": false,
+    "**/.editorconfig": false,
+    "**/.prettierrc": false,
+    "**/schema.gql": false,
+    "**/nest-cli.json": false,
+    "*[d|D]ocker*": false,
+    ".nuxt": false,
+    ".gitmodules": false
+  },
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.displayLanguage": "cs-CZ",
+  "folderTemplates.templateFolderPath": ".fttemplates",
+  "betterTypeScriptErrors.prettify": true,
+  "extensions.experimental.affinity": {
+    "better-ts-errors.better-ts-errors": 1
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#483fc7",
+    "activityBar.background": "#483fc7",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#d4726b",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#483fc7",
+    "statusBar.background": "#3730a3",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#483fc7",
+    "statusBarItem.remoteBackground": "#3730a3",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#3730a3",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#3730a399",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#3730a3",
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // }
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "gql",
+    "graphql"
+  ],
+
+  // Turn off auto fix for prefer-const
+  "eslint.codeActionsOnSave.rules": [
+    "!unused-imports/no-unused-imports",
+    "*"
+  ],
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "scss.lint.unknownAtRules": "ignore"
+}

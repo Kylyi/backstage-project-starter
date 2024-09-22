@@ -1,0 +1,14 @@
+{
+  "externalLinks": [],
+  "api": {
+    "root": "",
+    "help": ""
+  },
+  "sessionTimeoutMinutes": 30,
+  "confirmation": {
+    "editable": false,
+    "enabled": true,
+    "required": false
+  },
+  "environmentColor": ""
+}

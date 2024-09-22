@@ -1,0 +1,7 @@
+Dockerfile
+files
+errors
+logs
+.nuxt
+node_modules
+dist
